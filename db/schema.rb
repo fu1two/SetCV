@@ -13,6 +13,10 @@
 ActiveRecord::Schema.define(version: 20180328162523) do
 
   create_table "cards", force: :cascade do |t|
+    t.string "color"
+    t.integer "number"
+    t.string "shape"
+    t.string "shading"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
